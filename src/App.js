@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Portal from './Portal';
+import ReactDOM from 'react-dom';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      {ReactDOM.createPortal(<Portal/>, document.getElementById('portal-root'))}
     </div>
   );
 }
