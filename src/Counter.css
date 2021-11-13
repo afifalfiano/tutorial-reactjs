@@ -1,0 +1,19 @@
+
+   
+
+.counter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(80, 170, 255);
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+}
