@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import DaftarBelajar from './DaftarBelajar';
 
 function App() {
+  const data = [
+    {
+      id: 1,
+      topic: 'React Javascript'
+    },
+    {
+      id: 2,
+      topic: 'Next Javascript'
+    },
+    {
+      id: 3,
+      topic: 'Nest Javascript'
+    }
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>List Pada ReactJs</h1>
+      <DaftarBelajar data={data}/>
     </div>
   );
 }
